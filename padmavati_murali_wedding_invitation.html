@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name="description" content="Padmavathi weds Murali Krishna Reddy — 22 August 2026, Dechavaram">
 <title>Padmavathi ❦ Murali Krishna Reddy — Wedding 2026</title>
+<link rel="canonical" href="https://srk-m.github.io/padma-N-Murali-wedding-invitation/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Padmavathi ❦ Murali Krishna Reddy — Wedding Invitation">
+<meta property="og:description" content="Join us in celebrating our wedding on Saturday, 22 August 2026 in Dechavaram.">
+<meta property="og:url" content="https://srk-m.github.io/padma-N-Murali-wedding-invitation/">
+<meta property="og:image" content="https://srk-m.github.io/padma-N-Murali-wedding-invitation/assets/og-image.jpg">
+<meta property="og:image:alt" content="Padmavathi and Murali Krishna Reddy wedding invitation">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Padmavathi ❦ Murali Krishna Reddy — Wedding Invitation">
+<meta name="twitter:description" content="Saturday, 22 August 2026 · Dechavaram">
+<meta name="twitter:image" content="https://srk-m.github.io/padma-N-Murali-wedding-invitation/assets/og-image.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='50' font-size='40' fill='%23c9922a'>P❦M</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -286,7 +297,7 @@ html[lang="te"] .door-lang{font-family:'Noto Serif Telugu',serif;letter-spacing:
 .hero-time{align-items:flex-start;text-align:left;line-height:1.2;}
 .hero-time strong{font-family:'Bodoni Moda',serif;font-size:clamp(1.25rem,3.6vw,1.7rem);letter-spacing:.04em;color:var(--gold-p);margin:3px 0;}
 
-.scroll-cue{position:relative;z-index:2;margin-top:48px;font-family:'Cinzel',serif;font-size:.54rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);opacity:.48;animation:cueB 2.5s ease-in-out infinite;}
+.scroll-cue{position:relative;z-index:2;margin-top:48px;padding:9px 18px 9px 22px;border:1px solid rgba(226,187,84,.42);border-radius:999px;background:rgba(3,2,16,.42);font-family:'Cinzel',serif;font-size:.62rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-b);opacity:.92;text-shadow:0 0 12px rgba(244,214,104,.38);box-shadow:0 0 20px rgba(201,146,42,.1);animation:cueB 2.5s ease-in-out infinite;}
 @keyframes cueB{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
 
 /* ═══════════════════════════════════════
@@ -349,8 +360,15 @@ html[lang="te"] .door-lang{font-family:'Noto Serif Telugu',serif;letter-spacing:
 /* medallion illustration container */
 .c-medallion{width:clamp(130px,24vw,168px);height:clamp(130px,24vw,168px);margin:0 auto 18px;display:block;}
 .c-card .c-medallion{display:none;}
-.c-photo{display:block;width:clamp(142px,25vw,178px);height:clamp(142px,25vw,178px);margin:0 auto 22px;object-fit:cover;border-radius:50%;border:3px solid rgba(226,187,84,.72);outline:1px solid rgba(201,146,42,.36);outline-offset:5px;box-shadow:0 10px 28px rgba(8,6,24,.18);}
-.c-photo.bride-photo{object-position:center 26%;}.c-photo.groom-photo{object-position:center 24%;}
+.c-photo{display:block;width:clamp(210px,37vw,280px);height:clamp(210px,37vw,280px);margin:0 auto 30px;object-fit:cover;border-radius:50%;border:3px solid rgba(226,187,84,.72);outline:1px solid rgba(201,146,42,.36);outline-offset:5px;box-shadow:0 10px 28px rgba(8,6,24,.18);cursor:zoom-in;transition:transform .3s var(--ease),box-shadow .3s;}
+.c-photo:hover{transform:scale(1.04);box-shadow:0 14px 34px rgba(8,6,24,.28);}
+.c-photo.bride-photo{object-position:center 42%;}.c-photo.groom-photo{object-position:center 43%;}
+
+/* Portrait zoom */
+.photo-lightbox{position:fixed;inset:0;z-index:1001;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(3,2,16,.92);backdrop-filter:blur(9px);}
+.photo-lightbox.open{display:flex;}
+.photo-lightbox img{max-width:min(92vw,680px);max-height:84vh;object-fit:contain;border-radius:10px;border:1px solid rgba(226,187,84,.52);box-shadow:0 24px 70px rgba(0,0,0,.58);}
+.photo-lightbox button{position:absolute;top:18px;right:18px;width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;background:rgba(7,5,28,.85);color:var(--gold-b);font-size:1.4rem;line-height:1;cursor:pointer;}
 
 .c-photo-hint{display:none;}
 .c-sub{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;}
@@ -801,10 +819,9 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
      ════════════════════════════════════ -->
 <header class="hero" id="main">
   <!-- Background video — muted, looped, decorative -->
-  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline
+  <video class="hero-video" id="heroVideo" muted loop playsinline preload="none"
     aria-hidden="true" tabindex="-1"
     poster="">
-    <source src="hero-bg.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -942,7 +959,7 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
           <circle cx="74" cy="118" r="3"/><circle cx="84" cy="122" r="3.5"/><circle cx="94" cy="118" r="3"/>
         </g>
       </svg>
-      <img class="c-photo bride-photo" src="assets/couple/bride.jpg" alt="Padmavathi">
+      <img class="c-photo bride-photo" src="assets/couple/bride.jpg" alt="Padmavathi — select for a closer look" tabindex="0" role="button" loading="lazy" decoding="async">
       <span class="c-photo-hint">Photo coming soon</span>
       <p class="c-sub" style="margin-top:12px;">The Bride</p>
       <h3 class="c-name">Chi. La. Sow. Padmavathi</h3>
@@ -980,7 +997,7 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
           <path d="M66 118 L84 112 L102 118 L84 122Z"/>
         </g>
       </svg>
-      <img class="c-photo groom-photo" src="assets/couple/groom.jpg" alt="Murali Krishna Reddy">
+      <img class="c-photo groom-photo" src="assets/couple/groom.jpg" alt="Murali Krishna Reddy — select for a closer look" tabindex="0" role="button" loading="lazy" decoding="async">
       <span class="c-photo-hint">Photo coming soon</span>
       <p class="c-sub" style="margin-top:12px;">The Groom</p>
       <h3 class="c-name">Chi. Murali Krishna Reddy</h3>
@@ -1248,8 +1265,7 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
     </div>
     <p class="rsvp-note">We joyfully invite you, your family and dear ones to grace this auspicious celebration with your blessings and presence.</p>
     <div class="rsvp-btns">
-      <a class="rsvp-wa" href="https://wa.me/919550454649?text=We+will+be+attending+the+wedding+of+Padmavathi+%26+Murali+Krishna+Reddy+on+22+August+2026+at+Dechavaram." target="_blank" rel="noopener noreferrer" aria-label="Share invitation via WhatsApp">💬 Share via WhatsApp</a>
-      <a class="rsvp-cal" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Padmavathi+%26+Murali+Krishna+Wedding&dates=20260822T143000Z/20260823T023000Z&location=Sri+Vigneswara+Kalyana+Mandapam+Dechavaram+Palnadu&details=Dinner+8PM+%7C+Muhurtham+3:47AM" target="_blank" rel="noopener noreferrer" aria-label="Add to Google Calendar">📅 Add to Calendar</a>
+      <a class="rsvp-cal" href="padmavathi-murali-wedding.ics" type="text/calendar" aria-label="Add the wedding to your calendar">📅 Add to Calendar</a>
     </div>
   </div>
   <div class="hashtag-box" data-r data-d="4">
@@ -1261,6 +1277,11 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
 
 
 <!-- FOOTER -->
+<div class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Portrait preview" aria-hidden="true">
+  <button type="button" id="closePhotoLightbox" aria-label="Close portrait preview">×</button>
+  <img id="photoLightboxImage" src="" alt="">
+</div>
+
 <footer>
   <p class="ft-mon shimmer" aria-hidden="true">P ❦ M</p>
   <p class="ft-bless" lang="te">శుభం భూయాత్</p>
@@ -1406,6 +1427,20 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
   });
 })();
 
+/* ── Couple portrait zoom ─────────────────── */
+(function(){
+  var lightbox=document.getElementById('photoLightbox'),lightboxImage=document.getElementById('photoLightboxImage'),closeButton=document.getElementById('closePhotoLightbox'),lastFocused=null;
+  function closePortrait(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightboxImage.src='';if(lastFocused)lastFocused.focus();}
+  function openPortrait(image){lastFocused=image;lightboxImage.src=image.currentSrc||image.src;lightboxImage.alt=image.alt.replace(' — select for a closer look','');lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false');closeButton.focus();}
+  document.querySelectorAll('.c-photo').forEach(function(image){
+    image.addEventListener('click',function(){openPortrait(image);});
+    image.addEventListener('keydown',function(event){if(event.key==='Enter'||event.key===' '){event.preventDefault();openPortrait(image);}});
+  });
+  closeButton.addEventListener('click',closePortrait);
+  lightbox.addEventListener('click',function(event){if(event.target===lightbox)closePortrait();});
+  document.addEventListener('keydown',function(event){if(event.key==='Escape'&&lightbox.classList.contains('open'))closePortrait();});
+})();
+
 /* ── Doors ────────────────────────────────── */
 var doors=document.getElementById('doors'),btn=document.getElementById('openBtn'),
     burst=document.getElementById('burst'),aud=document.getElementById('aud'),
@@ -1510,15 +1545,21 @@ function spawnPetals(){
   }
 }
 
-/* ── Video: start at 5s, slow speed, loop from 5s ── */
+/* ── Video: optional decorative enhancement on suitable connections ── */
 (function(){
   var vid=document.getElementById('heroVideo');
   if(!vid)return;
 
-  /* reduced-motion: hide entirely */
-  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+  /* Never spend data on a decorative video for guests who save data or are on a slow network. */
+  var connection=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
+  var slowConnection=connection&&(connection.saveData||/^(slow-2g|2g|3g)$/.test(connection.effectiveType||''));
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches||slowConnection){
     vid.pause();vid.removeAttribute('autoplay');vid.style.display='none';return;
   }
+
+  /* The video is deliberately attached only after the invitation's text and controls are ready. */
+  var source=document.createElement('source');
+  source.src='hero-bg.mp4';source.type='video/mp4';vid.appendChild(source);vid.load();
 
   vid.muted=true;
   vid.playbackRate=0.45;   /* calm, cinematic pacing */
