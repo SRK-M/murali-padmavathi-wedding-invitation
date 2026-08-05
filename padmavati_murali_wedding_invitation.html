@@ -348,8 +348,11 @@ html[lang="te"] .door-lang{font-family:'Noto Serif Telugu',serif;letter-spacing:
 
 /* medallion illustration container */
 .c-medallion{width:clamp(130px,24vw,168px);height:clamp(130px,24vw,168px);margin:0 auto 18px;display:block;}
+.c-card .c-medallion{display:none;}
+.c-photo{display:block;width:clamp(142px,25vw,178px);height:clamp(142px,25vw,178px);margin:0 auto 22px;object-fit:cover;border-radius:50%;border:3px solid rgba(226,187,84,.72);outline:1px solid rgba(201,146,42,.36);outline-offset:5px;box-shadow:0 10px 28px rgba(8,6,24,.18);}
+.c-photo.bride-photo{object-position:center 26%;}.c-photo.groom-photo{object-position:center 24%;}
 
-.c-photo-hint{display:block;font-family:'Cinzel',serif;font-size:.48rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);opacity:.7;margin-top:6px;text-align:center;}
+.c-photo-hint{display:none;}
 .c-sub{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;}
 .c-name{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(1.1rem,3.5vw,1.5rem);color:var(--navy);margin-bottom:10px;letter-spacing:.04em;line-height:1.3;}
 .c-family{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:.94rem;color:var(--ink-2);line-height:1.75;}
@@ -939,6 +942,7 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
           <circle cx="74" cy="118" r="3"/><circle cx="84" cy="122" r="3.5"/><circle cx="94" cy="118" r="3"/>
         </g>
       </svg>
+      <img class="c-photo bride-photo" src="assets/couple/bride.jpg" alt="Padmavathi">
       <span class="c-photo-hint">Photo coming soon</span>
       <p class="c-sub" style="margin-top:12px;">The Bride</p>
       <h3 class="c-name">Chi. La. Sow. Padmavathi</h3>
@@ -976,6 +980,7 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
           <path d="M66 118 L84 112 L102 118 L84 122Z"/>
         </g>
       </svg>
+      <img class="c-photo groom-photo" src="assets/couple/groom.jpg" alt="Murali Krishna Reddy">
       <span class="c-photo-hint">Photo coming soon</span>
       <p class="c-sub" style="margin-top:12px;">The Groom</p>
       <h3 class="c-name">Chi. Murali Krishna Reddy</h3>
