@@ -1390,6 +1390,19 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
     doorToggle.setAttribute('aria-pressed',String(useTelugu));
     doorToggle.setAttribute('aria-label',useTelugu?'Switch invitation language to English':'Switch invitation language to Telugu');
   }
+  /* Put the groom cards first before applying the paired copy, keeping every photo and detail aligned. */
+  var coupleGrid=document.querySelector(".couple-grid"),hostsGrid=document.querySelector(".hosts-grid");
+  if(coupleGrid){
+    var brideCard=coupleGrid.querySelector(".bride-photo")?.closest(".c-card");
+    var groomCard=coupleGrid.querySelector(".groom-photo")?.closest(".c-card");
+    var coupleDivider=coupleGrid.querySelector(".c-center");
+    if(brideCard&&groomCard&&coupleDivider)coupleGrid.replaceChildren(groomCard,coupleDivider,brideCard);
+  }
+  if(hostsGrid){
+    var brideParents=hostsGrid.querySelector("img[src*=\"bride-parents\"]")?.closest(".h-card");
+    var groomParents=hostsGrid.querySelector("img[src*=\"groom-parents\"]")?.closest(".h-card");
+    if(brideParents&&groomParents)hostsGrid.replaceChildren(groomParents,brideParents);
+  }
   translate(false);
   toggle.addEventListener('click',function(){translate(!isTelugu);});
   doorToggle.addEventListener('click',function(){translate(!isTelugu);});
@@ -1399,18 +1412,6 @@ html[lang="te"] .dc-head,html[lang="te"] .dc-names,html[lang="te"] .open-btn,htm
 (function(){
   var hero=document.querySelector('.hero'), couple=document.querySelector('.couple-sec'), save=document.querySelector('.rsvp-sec'), venue=document.querySelector('.venue-sec'), events=document.querySelector('.events-sec'), families=document.querySelector('.hosts-sec'), travel=document.querySelector('.travel-sec'), nearby=document.querySelector('.attr-sec');
   var countdown=document.querySelector('.count-sec'), prewed=document.querySelector('.prewed-sec');
-  var coupleGrid=document.querySelector('.couple-grid'), hostsGrid=document.querySelector('.hosts-grid');
-  if(coupleGrid){
-    var brideCard=coupleGrid.querySelector('.bride-photo')?.closest('.c-card');
-    var groomCard=coupleGrid.querySelector('.groom-photo')?.closest('.c-card');
-    var coupleDivider=coupleGrid.querySelector('.c-center');
-    if(brideCard&&groomCard&&coupleDivider)coupleGrid.replaceChildren(groomCard,coupleDivider,brideCard);
-  }
-  if(hostsGrid){
-    var brideParents=hostsGrid.querySelector('img[src*="bride-parents"]')?.closest('.h-card');
-    var groomParents=hostsGrid.querySelector('img[src*="groom-parents"]')?.closest('.h-card');
-    if(brideParents&&groomParents)hostsGrid.replaceChildren(groomParents,brideParents);
-  }
   if(countdown && save){
     var timer=countdown.querySelector('.timer'), note=save.querySelector('.rsvp-note');
     if(timer && note){
